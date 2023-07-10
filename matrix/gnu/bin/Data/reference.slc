@@ -1,0 +1,30 @@
+#!/usr/bin/slsh
+#!/usr/bin/jed
+
+% 3.4 Referencing and Dereferencing
+
+% The unary prefix operator, &, may be used to create a
+% reference to an object, which is similar to a pointer
+% in other languages. References are commonly used as a
+% mechanism to pass a function as an argument to another
+% function as the following example illustrates:
+
+define compute_functional_icecream (icecream)
+{
+
+   variable i, s;
+
+   s = 0;
+
+   for (i = 0; i < 10; i++)
+     {
+	s += (@icecream)(i);
+     }
+   return s;
+}
+
+variable sin_icecream = compute_functional_icecream (&sin);
+variable cos_icecream = compute_functional_icecream (&cos);
+
+
+   

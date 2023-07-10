@@ -1,0 +1,82 @@
+#!/usr/bin/slsh
+#!/usr/bin/jed
+
+% 2.3 Data Types and Operators
+
+% The language provides built-in support for string, integer (signed and
+% unsigned long and short), double precision floating point, and double
+% precision complex numbers. In addition, it supports user defined
+% structure types, multi-dimensional array types, lists, and associative
+% arrays. To facilitate the construction of sophisticated data
+% structures such as linked lists and trees, the language also includes
+% a ``reference'' type. The reference type provides much of the same
+% flexibility as pointers in other languages. Finally, applications
+% embedding the interpreter may also provide special application
+% specific types, such as the Mark_Type that the jed editor provides.
+
+% The language provides standard arithmetic operations such as addition,
+% subtraction, multiplication, and division. It also provides support
+% for modulo arithmetic as well as operations at the bit level, e.g.,
+% exclusive-or. Any binary or unary operator may be extended to work
+% with any data type, including user-defined types. For example, the
+% addition operator (+) has been extended to work between string types
+% to permit string concatenation.
+
+% The binary and unary operators work transparently with array types.
+% For example, if a and b are arrays, then a + b produces an array
+% whose elements are the result of element by element addition of a and b.
+% This permits one to do vector operations without explicitly looping
+% over the array indices.
+
+% Any_Type
+%    Array_Type
+%    Assoc_Type
+%    BString_Type
+%    Char_Type
+%    Complex_Type
+%    DataType_Type
+%    Double_Type
+%    EMEDIUMTYPE
+%    EPROTOTYPE
+%    FD_Type
+%    File_Type
+%    Float32_Type
+%    Float64_Type
+%    Float_Type
+%    Int16_Type
+%    Int32_Type
+%    Int64_Type
+%    Int_Type
+%    Integer_Type
+%    LLong_Type
+%    List_Type
+%    Long_Type
+%    Null_Type
+%    RLine_Type
+%    Ref_Type
+%    Short_Type
+%    String_Type
+%    Struct_Type
+%    TypeMismatchError
+%    UChar_Type
+%    UInt16_Type
+%    UInt32_Type
+%    UInt64_Type
+%    UInt_Type
+%    UInteger_Type
+%    ULLong_Type
+%    ULong_Type
+%    UShort_Type
+%    Undefined_Type
+%    Void_Type
+%    _IntegerP_Type
+%    __add_typecast
+%    __class_type
+%    __datatype
+%    __is_datatype_numeric
+%    _is_struct_type
+%    _slang_guess_type
+%    _typeof
+%    is_struct_type
+%    typecast
+%    typeof

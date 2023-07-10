@@ -1,0 +1,18 @@
+#!/usr/bin/slsh
+#!/usr/bin/jed
+
+% Even this C example is misleading since none of the issues
+% of memory management of the strings has been dealt with.
+% The S-Lang language hides all these issues from the user.
+
+%  Binary operators have been defined to work with the
+%  string data type. In particular the + operator may
+%  be used to perform string concatenation. That is,
+%  one can use the + operator as an alternative to
+%  strcat:
+
+define concat_3_strings (a, b, c)
+{
+
+   return a + b + c;
+}

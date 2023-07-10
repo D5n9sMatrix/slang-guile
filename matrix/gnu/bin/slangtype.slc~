@@ -1,0 +1,22 @@
+#!/usr/bin/jed
+
+variable file(read, write)
+{
+    variable read;
+    variable write;
+    
+    read = "pdf";
+    write = "latex";
+    
+    if (read != "pdf")
+    print(read);
+    else
+    return(read);
+    
+    if (write != "latex")
+    print(write);
+    else
+    return (write);
+ }
+ 
+ quit

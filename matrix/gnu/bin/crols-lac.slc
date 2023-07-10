@@ -1,0 +1,14 @@
+#!/usr/bin/jed
+
+variable file;
+
+file = "(read, write)";
+
+if (file != "(read, write)")
+print(file);
+else
+file;
+
+quit
+
+

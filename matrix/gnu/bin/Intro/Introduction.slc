@@ -1,0 +1,14 @@
+#!/usr/bin/jed
+
+% 2. Introduction
+
+%  S-Lang is a powerful interpreted language that may be
+%  embedded into an application to make the application
+%  extensible. This enables the application to be used
+%  in ways not envisioned by the programmer, thus
+%  providing the application with much more flexibility
+%  and power. Examples of applications that take advantage
+%  of the interpreter in this way include the jed editor
+%  and the slrn newsreader.
+
+variable Introduction;
